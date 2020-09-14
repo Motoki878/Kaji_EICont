@@ -1,5 +1,6 @@
 
 #Input files
+
            spikes: spike data (structure form), the last line express data size 
                    the second line from the last one is a blank.
           j_delay: the used delays of post-synaptic neuron j ( default value is [1:30])        
@@ -11,6 +12,7 @@
 ----------------
 
 #Output files
+
           te-result : TE values at the peak delay
           sltecpp   : SLTE values (with delay)
           all_te    : TE values (with delay)
