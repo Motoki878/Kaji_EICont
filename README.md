@@ -1,5 +1,5 @@
 
-#Input files
+# Input files
 
            spikes: spike data (structure form), the last line express data size 
                    the second line from the last one is a blank.
@@ -11,7 +11,7 @@
        windowsize: window size to calculate CIs
 ----------------
 
-#Output files
+# Output files
 
           te-result : TE values at the peak delay
           sltecpp   : SLTE values (with delay)
