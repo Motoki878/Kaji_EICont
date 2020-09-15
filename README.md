@@ -26,11 +26,11 @@
 ----------------
 # Inputs
 
-           spikes: spike data (structure form), the last line express data size the second line from the last one is a blank.
-          j_delay: the used delays of post-synaptic neuron j ( default value is [1:30])        
-          i_order: the order of pre-synaptic neuron i  ( default value is only [1])     this is not used in GPU version
-          j_order: the order of pre-synaptic neuron j  ( default value is only [1])     this is not used in GPU version
-       windowsize: window size to calculate CIs
+        spikes: spike data (structure form), the last line express data size the second line from the last one is a blank.
+       j_delay: the used delays of post-synaptic neuron j ( default value is [1:30])        
+       i_order: the order of pre-synaptic neuron i  ( default value is only [1])     this is not used in GPU version
+       j_order: the order of pre-synaptic neuron j  ( default value is only [1])     this is not used in GPU version
+    windowsize: window size to calculate CIs
 ----------------
 # Outputs
 
