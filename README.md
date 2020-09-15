@@ -3,9 +3,10 @@
   Transfer entropy quantifies the directed causal coupling strengths among neurons.
   Sorted local transfer entropy is similar to the normal transfer entropy and specifically distinguishes between inhibitory influences
   and excitatory influences, by using a sorting method that takes into account the reversed signs of the local transfer entropies for
-  the excitatory and inhibitory interactions. ASDFTEslteKyotoCuda_mod.m running in matlab loads TransentPTXSLTEslte.cu and transentPTXSLTEslte.ptx. 
-  Theresore, after compiling TransentPTXSLTEslte.cu with matlab, run ASDFTEslteKyotoCuda_mod with matlab.
-  The CUDA code calculates only with a fixed delay, so ASDFTEslteKyotoCuda_mod calculates with multiple delays.
+  the excitatory and inhibitory interactions. 
+  ASDFTEslteKyotoCuda_mod.m running in matlab loads TransentPTXSLTEslte.cu and transentPTXSLTEslte.ptx. 
+  Therefore, after compiling TransentPTXSLTEslte.cu with matlab, run ASDFTEslteKyotoCuda_mod.m with matlab.
+  The CUDA code calculates only with a fixed delay, and ASDFTEslteKyotoCuda_mod.m calculates with multiple delays.
 
 ----------------    
 # Requirments
