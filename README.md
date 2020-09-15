@@ -20,7 +20,7 @@
 # Example of usage
 
     load ./spike.mat
-    delay0 = [1:30];    %   delay1 = delay0+1;
+    delay0 = [1:30];
     [peakTE, sltecpp, TEdelays, measureddelay, CI, peakTE_all] = ASDFTEslteKyotoCuda_mod( spikes, delay0, 1);
 
 ----------------
