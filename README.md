@@ -8,9 +8,9 @@
   The CUDA code calculates only with a fixed delay, so ASDFTEslteKyotoCuda_mod calculates with multiple delays.
 
 ----------------    
-# Requirment
+# Requirments
     
-  ASDFTEslteKyotoCuda_mod needs matlab and CUDA for GPU.
+  Matlab, CUDA and GPU are necessary to run this code.
   
 -----------------
 # Example data
