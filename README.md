@@ -1,5 +1,5 @@
 # Description
-  ASDFTEslteKyotoCuda_mod.m calculates transfer entropy and sorted local transfer entropy to assess cell-cell interactions, taking into account a certain width of delay.
+  ASDFTEslteKyotoCuda_mod.m calculates transfer entropy and sorted local transfer entropy to assess neuron-neuron interactions, taking into account a certain width of delay.
   Transfer entropy quantifies the directed causal coupling strengths among neurons.
   Sorted local transfer entropy is similar to the normal transfer entropy and specifically distinguishes between inhibitory influences
   and excitatory influences, by using a sorting method that takes into account the reversed signs of the local transfer entropies for
