@@ -7,6 +7,7 @@
   ASDFTEslteKyotoCuda_mod.m running in matlab loads TransentPTXSLTEslte.cu and transentPTXSLTEslte.ptx. 
   Therefore, after compiling TransentPTXSLTEslte.cu with matlab, run ASDFTEslteKyotoCuda_mod.m with matlab.
   The CUDA code calculates only with a fixed delay, and ASDFTEslteKyotoCuda_mod.m calculates with multiple delays.
+  The GPU code will be 10-100 times faster than other CPU codes.
 
 ----------------    
 # Requirments
