@@ -15,6 +15,10 @@
 -----------------
 # Example data
   spike.mat
+    a matlab data recording a neuronal spike squences.
+    size of data: (1, N+2) (N is the number of neurons) 
+    (1-N) components: spike data (time stamps of spike happened) 
+    N+2 component: Number of cortical neurons and maximum time step  time bin size: 1ms  
   
 ----------------
 # Example of usage
@@ -27,6 +31,7 @@
 # Inputs
 
         spikes: spike data (structure form), the last line express data size the second line from the last one is a blank.
+                 
        j_delay: the used delays of post-synaptic neuron j ( default value is [1:30])        
        i_order: the order of pre-synaptic neuron i  ( default value is only [1])     this is not used in GPU version
        j_order: the order of pre-synaptic neuron j  ( default value is only [1])     this is not used in GPU version
