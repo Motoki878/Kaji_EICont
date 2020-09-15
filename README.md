@@ -49,4 +49,6 @@
       te_result_all : TE values in five miliseconds after their peakpoints    
 -----------------
 # Reference
-   If you use this code, cite this following article: Kajiwara, M., Nomura, R., Goetze, F., Akutsu, T., & Shimono, M. (2020). Inhibitory neurons are a Central Controlling regulator in the effective cortical microconnectome. bioRxiv.
+   If you use this code, cite this following article: 
+   
+   Kajiwara, M., Nomura, R., Goetze, F., Akutsu, T., & Shimono, M. (2020). Inhibitory neurons are a Central Controlling regulator in the effective cortical microconnectome. bioRxiv.
