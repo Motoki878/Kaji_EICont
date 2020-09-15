@@ -15,6 +15,7 @@
 -----------------
 # Example data
   spike.mat
+  
     a matlab data recording a neuronal spike squences.
     size of data: (1, N+2) (N is the number of neurons) 
     (1-N) components: spike data (time stamps of spike happened) 
