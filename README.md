@@ -26,6 +26,7 @@
 ----------------
 # Example of usage
 
+    mex 
     load ./spike.mat
     delay0 = [1:30];
     [peakTE, SLTEdelays, TEdelays, delayindex, CI, peakTE_all] = ASDFTEslteKyotoCuda_mod( spikes, delay0, 1);
