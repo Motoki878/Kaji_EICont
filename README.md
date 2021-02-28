@@ -28,7 +28,7 @@
 
     load ./spike.mat
     delay0 = [1:30];
-    [peakTE, sltecpp, TEdelays, measureddelay, CI, peakTE_all] = ASDFTEslteKyotoCuda_mod( spikes, delay0, 1);
+    [peakTE, SLTEdelays, TEdelays, delayindex, CI, peakTE_all] = ASDFTEslteKyotoCuda_mod( spikes, delay0, 1);
 
 ----------------
 # Inputs
@@ -42,14 +42,14 @@
 ----------------
 # Outputs
 
-          te-result : TE values at the peak delay
-          sltecpp   : SLTE values (with delay)
-          all_te    : TE values (with delay)
-          delayindex: The delays when TE showed the peak
-          ci_result : CI (Coincidence Index) values
-      te_result_all : TE values in five miliseconds after their peakpoints    
+          TEdelays   : TE (Transfer Entropy) values depending with delay (1-30ms) between a spike of pre-synaptic neuron and spikes of post-synaptic neurons.
+          SLTEdelays : SLTE (Sorted Local Transfer Entropy) values depending with delay (1-30ms) between a spike of pre-synaptic neuron and spikes of post-synaptic neurons.
+          peakTE     : TE (Transfer Entropy) values at the peak  (maximum) point of the previously given variable, TEdelays.
+          delayindex : The bin index at the delay when TE showed the peak (maximum) value.
+          ci_result  : CI (Coincidence Index) values calculated from the TEdelays. 
+          peakTE_all : TE values only within five bins after their peak points.
 -----------------
 # Reference
    If you use this code, cite this following article: 
    
-   Kajiwara, M., Nomura, R., Goetze, F., Akutsu, T., & Shimono, M. (2020). Inhibitory neurons are a Central Controlling regulator in the effective cortical microconnectome. bioRxiv.
+   Kajiwara, M., Nomura, R., Goetze, F., Akutsu, T., & Shimono, M. (2020). Inhibitory neurons are a Central Controlling regulator in the effective cortical microconnectome. under review.
