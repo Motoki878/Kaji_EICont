@@ -13,6 +13,8 @@
 # Requirments
     
   Matlab, CUDA and GPU are necessary to run this code.
+  You have to prepare basic compiler environment for CUDA code.
+  For example, refer https://jp.mathworks.com/help/parallel-computing/mexcuda.html
   
 -----------------
 # Example data
@@ -26,7 +28,7 @@
 ----------------
 # Example of usage
 
-    mex 
+    mexcuda ./TransentPTXSLTEslte.cu
     load ./spike.mat
     delay0 = [1:30];
     [peakTE, SLTEdelays, TEdelays, delayindex, CI, peakTE_all] = ASDFTEslteKyotoCuda_mod( spikes, delay0, 1);
