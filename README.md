@@ -15,22 +15,13 @@
   Matlab, CUDA and GPU are necessary to run this code.
   You need to prepare a basic compiler environment for CUDA code.
   For example, refer https://jp.mathworks.com/help/parallel-computing/mexcuda.html
-  
------------------
-# Example data
-  spike.mat
-  
-    a matlab data recording a neuronal spike squences.
-    size of data: (1, N+2) (N is the number of neurons) 
-    (1-N) components: spike data (time stamps of spike happened) 
-    N+2 component: Number of cortical neurons and maximum time step  time bin size: 1ms  
     
 -----------------
 # Setting
     mexcuda ./TransentPTXSLTEslte.cu
   
 ----------------
-# Example of usage
+# Usage
     load ./spike.mat
     delay0 = [1:30];
     [peakTE, SLTEdelays, TEdelays, delayindex, CI, peakTE_all] = ASDFTEslteKyotoCuda_mod( spikes, delay0, 1);
@@ -39,6 +30,15 @@
 # Inputs of the main code (ASDFTEslteKyotoCuda_mod)
         spikes : spike data (structure form), the last line express data size the second line from the last one is a blank.
        delay0  : the used delays of post-synaptic neuron j ( default value is 1-30 [ms]).
+       
+-----------------
+# Example data
+  spike.mat
+  
+    a matlab data recording a neuronal spike squences.
+    size of data: (1, N+2) (N is the number of neurons) 
+    (1-N) components: spike data (time stamps of spike happened) 
+    N+2 component: Number of cortical neurons and maximum time step  time bin size: 1ms  
        
 ----------------
 # Outputs of the main code (ASDFTEslteKyotoCuda_mod)
