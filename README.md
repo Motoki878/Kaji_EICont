@@ -13,7 +13,7 @@
 # Requirments
     
   Matlab, CUDA and GPU are necessary to run this code.
-  You have to prepare basic compiler environment for CUDA code.
+  You need to prepare a basic compiler environment for CUDA code.
   For example, refer https://jp.mathworks.com/help/parallel-computing/mexcuda.html
   
 -----------------
