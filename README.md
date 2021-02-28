@@ -24,27 +24,24 @@
     size of data: (1, N+2) (N is the number of neurons) 
     (1-N) components: spike data (time stamps of spike happened) 
     N+2 component: Number of cortical neurons and maximum time step  time bin size: 1ms  
+    
+-----------------
+# Setting
+    mexcuda ./TransentPTXSLTEslte.cu
   
 ----------------
 # Example of usage
-
-    mexcuda ./TransentPTXSLTEslte.cu
     load ./spike.mat
     delay0 = [1:30];
     [peakTE, SLTEdelays, TEdelays, delayindex, CI, peakTE_all] = ASDFTEslteKyotoCuda_mod( spikes, delay0, 1);
 
 ----------------
-# Inputs
-
-        spikes: spike data (structure form), the last line express data size the second line from the last one is a blank.
-                 
-       j_delay: the used delays of post-synaptic neuron j ( default value is 1-30 [ms])        
-       i_order: the order of pre-synaptic neuron i  ( default value is only [1])  This parameter is not used in GPU version
-       j_order: the order of pre-synaptic neuron j  ( default value is only [1])  This parameter is not used in GPU version
-    windowsize: window size to calculate CIs
+# Inputs of the main code (ASDFTEslteKyotoCuda_mod)
+        spikes : spike data (structure form), the last line express data size the second line from the last one is a blank.
+       delay0  : the used delays of post-synaptic neuron j ( default value is 1-30 [ms]).
+       
 ----------------
-# Outputs
-
+# Outputs of the main code (ASDFTEslteKyotoCuda_mod)
           TEdelays   : TE (Transfer Entropy) values depending with delay (1-30ms) between a spike of pre-synaptic neuron and spikes of post-synaptic neurons.
           SLTEdelays : SLTE (Sorted Local Transfer Entropy) values depending with delay (1-30ms) between a spike of pre-synaptic neuron and spikes of post-synaptic neurons.
           peakTE     : TE (Transfer Entropy) values at the peak  (maximum) point of the previously given variable, TEdelays.
