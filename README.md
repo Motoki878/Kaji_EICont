@@ -52,4 +52,4 @@
 # Reference
    If you use this code, cite this following article: 
    
-   Kajiwara, M., Nomura, R., Goetze, F., Akutsu, T., & Shimono, M. (2020). Inhibitory neurons are a Central Controlling regulator in the effective cortical microconnectome. under review.
+   Kajiwara, M., Nomura, R., Goetze, F., Kawabata, M., Isomura, Y., Akutsu, T., & Shimono, M. (2021). Inhibitory neurons exhibit high controlling ability in the cortical microconnectome. PLOS Computational Biology, 17(4), e1008846.
